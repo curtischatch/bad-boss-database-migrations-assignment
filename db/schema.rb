@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_12_180051) do
+ActiveRecord::Schema.define(version: 2018_08_12_183018) do
 
   create_table "parts", force: :cascade do |t|
     t.string "name"
     t.string "manufacturer"
     t.decimal "cost"
+    t.integer "quantity"
   end
 
 end
